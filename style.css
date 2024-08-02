@@ -23,23 +23,24 @@ a {
   gap: 10px;
 }
 
-h1{
+h1 {
   font-family: "Playwrite FR Trad", cursive;
   margin: 0;
 }
+
 .image {
   height: 100vh;
-  background: url('icecream1.jpeg')no-repeat center center fixed;
+  background: url('icecream1.jpeg') no-repeat center center fixed;
   background-size: cover;
 }
 
 body {
   margin: 0;
-  padding-top: 60px; 
+  padding-top: 60px;
 }
 
 .content {
-  background-color: white; 
+  background-color: white;
   padding: 20px;
 }
 
@@ -62,9 +63,9 @@ body, html {
 }
 
 .section-text {
-  text-align: justify; 
-  font-size: 18px; 
-  line-height: 1.6; 
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .section-image img {
@@ -91,14 +92,15 @@ body, html {
   padding: 10px;
   padding-left: 60px;
   border-radius: 2px;
-  background-color:beige;
+  background-color: beige;
 }
+
 .dish:hover, .message-us:hover, .feedback:hover {
   border: 2px solid white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.message-us,h3 {
+.message-us, h3 {
   font-family: 'LXGW WenKai Mono TC';
   font-size: 20px;
 }
@@ -132,4 +134,88 @@ body, html {
   color: #fff;
 }
 
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
 
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .image {
+    height: 50vh;
+  }
+
+  .section-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-text, .section-image {
+    margin: 10px;
+  }
+
+  .menu-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dish {
+    padding: 10px;
+  }
+
+  .message {
+    flex-direction: column;
+  }
+}
+/* Modal styles */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+  max-width: 400px;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
