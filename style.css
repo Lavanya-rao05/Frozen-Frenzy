@@ -139,7 +139,7 @@ body, html {
   .header {
     flex-direction: column;
     align-items: flex-start;
-    height: auto;
+    /* height: auto; */
     padding: 10px;
   }
 
@@ -148,10 +148,10 @@ body, html {
     align-items: flex-start;
     gap: 5px;
   }
-
+/* 
   .image {
     height: 50vh;
-  }
+  } */
 
   .section-content {
     flex-direction: column;
